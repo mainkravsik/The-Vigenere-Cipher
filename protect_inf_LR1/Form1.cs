@@ -36,17 +36,27 @@ namespace protect_inf_LR1
         {
             if (radioButtonChezar.Checked)
             {
-                
-                int key = 1;
+                if (textBoxKeyWord.Text.Length > 0 )
+                {
+                    int key = 1;
                 string s = textBox2.Text;
                 key = Convert.ToInt32(textBoxKeyWord.Text);
                 textBox1.Text = Encodeche(s,key);
+                }
+                else
+                    MessageBox.Show("Введите ключевое слово!");
             }
             if (radioButtonVizhener.Checked)
             {
-                string s = textBox2.Text;
-                textBox1.Text = Encode(s, Convert.ToString(textBoxKeyWord.Text));
+                if (textBoxKeyWord.Text.Length > 0)
+                {
+                    string s = textBox2.Text;
+                    textBox1.Text = Encode(s, Convert.ToString(textBoxKeyWord.Text));
+                }
+                else
+                     MessageBox.Show("Введите ключевое слово!");
             }
+
 
         }
 
@@ -55,10 +65,15 @@ namespace protect_inf_LR1
         {
             if (radioButtonChezar.Checked)
             {
-                int key = 1;
-                string s = textBox1.Text;
-                key = Convert.ToInt32(textBoxKeyWord.Text);
-                textBox2.Text = Decodeche(s, key);
+                if (textBoxKeyWord.Text.Length > 0)
+                {
+                    int key = 1;
+                    string s = textBox1.Text;
+                    key = Convert.ToInt32(textBoxKeyWord.Text);
+                    textBox2.Text = Decodeche(s, key);
+                }
+                else
+                    MessageBox.Show("Введите ключевое слово!");
             }
             if (radioButtonVizhener.Checked)
             {
@@ -187,6 +202,69 @@ namespace protect_inf_LR1
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char word = e.KeyChar;
+            for (int i = 0; i < N; i++)
+            {
+                if (!Char.IsDigit(word) && !Char.IsLetter (word) && word != 0x08 && word != ' ' && word != '.' && word != ',' && word != '?' && word != '!')
+                {
+                    e.Handled = true;
+                }
+            }
+            if (word == 13)
+            {
+                buttonEncrypt_Click(this, EventArgs.Empty);
+
+            }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char word = e.KeyChar;
+            for (int i = 0; i < N; i++)
+            {
+                if (!Char.IsDigit(word) && !Char.IsLetter(word) && word != 0x08 && word != ' ' && word != '.' && word != ',' && word != '?' && word != '!')
+                {
+                    e.Handled = true;
+                }
+            }
+            if (word == 13)
+            {
+                buttonEncrypt_Click(this, EventArgs.Empty);
+
+            }
+        }
+
+        private void textBoxKeyWord_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char word = e.KeyChar;
+            if (radioButtonChezar.Checked)
+            {
+                if (!Char.IsDigit(word) && word != 0x08)
+                {
+                    e.Handled = true;
+                }
+                if (word == 13)
+                {
+                    buttonEncrypt_Click(this, EventArgs.Empty);
+
+                }
+            }
+            else if (radioButtonVizhener.Checked)
+            {
+                if (!Char.IsLetter(word) && word != 0x08)
+                {
+                    e.Handled = true;
+                }
+                if (word == 13)
+                {
+                    buttonEncrypt_Click(this, EventArgs.Empty);
+
+                }
+            }
         }
     }
 }
