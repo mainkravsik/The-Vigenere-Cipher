@@ -209,7 +209,7 @@ namespace protect_inf_LR1
             char word = e.KeyChar;
             for (int i = 0; i < N; i++)
             {
-                if (!Char.IsDigit(word) && !Char.IsLetter (word) && word != 0x08 && word != ' ' && word != '.' && word != ',' && word != '?' && word != '!')
+                if (!Char.IsDigit(word) && !Char.IsLetter (word) && word != 0x08 && word != 0x17 && word != ' ' && word != '.' && word != ',' && word != '?' && word != '!')
                 {
                     e.Handled = true;
                 }
@@ -226,7 +226,7 @@ namespace protect_inf_LR1
             char word = e.KeyChar;
             for (int i = 0; i < N; i++)
             {
-                if (!Char.IsDigit(word) && !Char.IsLetter(word) && word != 0x08 && word != ' ' && word != '.' && word != ',' && word != '?' && word != '!')
+                if (!Char.IsDigit(word) && !Char.IsLetter(word) && word != 0x08 && word != 0x17 && word != ' ' && word != '.' && word != ',' && word != '?' && word != '!')
                 {
                     e.Handled = true;
                 }
@@ -243,7 +243,7 @@ namespace protect_inf_LR1
             char word = e.KeyChar;
             if (radioButtonChezar.Checked)
             {
-                if (!Char.IsDigit(word) && word != 0x08)
+                if (!Char.IsDigit(word) && word != 0x08 && word != 0x17)
                 {
                     e.Handled = true;
                 }
@@ -255,7 +255,7 @@ namespace protect_inf_LR1
             }
             else if (radioButtonVizhener.Checked)
             {
-                if (!Char.IsLetter(word) && word != 0x08)
+                if (!Char.IsLetter(word) && word != 0x08 && word != 0x17)
                 {
                     e.Handled = true;
                 }
@@ -265,6 +265,18 @@ namespace protect_inf_LR1
 
                 }
             }
+        }
+
+        private void textBox2_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == (Keys.Control | Keys.V))
+                (sender as TextBox).Paste();
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == (Keys.Control | Keys.V))
+                (sender as TextBox).Paste();
         }
     }
 }

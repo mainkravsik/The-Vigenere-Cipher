@@ -1,0 +1,10 @@
+D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\bin\Release\protect_inf_LR1.exe.config
+D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\bin\Release\protect_inf_LR1.exe
+D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\bin\Release\protect_inf_LR1.pdb
+D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Release\The_Vigenere_Cipher.csprojAssemblyReference.cache
+D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Release\protect_inf_LR1.Form1.resources
+D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Release\protect_inf_LR1.Properties.Resources.resources
+D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Release\The_Vigenere_Cipher.csproj.GenerateResource.cache
+D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Release\The_Vigenere_Cipher.csproj.CoreCompileInputs.cache
+D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Release\protect_inf_LR1.exe
+D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Release\protect_inf_LR1.pdb

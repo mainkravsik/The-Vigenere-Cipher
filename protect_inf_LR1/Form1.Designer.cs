@@ -122,29 +122,35 @@
             // 
             // textBoxKeyWord
             // 
+            this.textBoxKeyWord.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxKeyWord.Location = new System.Drawing.Point(193, 129);
             this.textBoxKeyWord.Name = "textBoxKeyWord";
-            this.textBoxKeyWord.Size = new System.Drawing.Size(163, 20);
+            this.textBoxKeyWord.Size = new System.Drawing.Size(163, 22);
             this.textBoxKeyWord.TabIndex = 4;
             this.textBoxKeyWord.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyWord_KeyPress);
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(6, 157);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(441, 77);
             this.textBox1.TabIndex = 5;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
             // 
             // textBox2
             // 
+            this.textBox2.AcceptsTab = true;
+            this.textBox2.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.Location = new System.Drawing.Point(6, 53);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(441, 77);
             this.textBox2.TabIndex = 6;
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            this.textBox2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyUp);
             // 
             // label2
             // 
