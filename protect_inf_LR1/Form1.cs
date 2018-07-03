@@ -167,5 +167,26 @@ namespace protect_inf_LR1
 
             return result;
         }
+
+        private int mousex = 0; private int mousey = 0;
+
+        private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
+        {
+            mousex = e.X; mousey = e.Y;
+        }
+
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                this.Location = new System.Drawing.Point(this.Location.X + (e.X - mousex), this.Location.Y + (e.Y - mousey));
+
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
