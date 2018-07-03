@@ -96,7 +96,7 @@ namespace protect_inf_LR1
             return result;
         }
 
-        //Метод расшифрования Виженера
+        //Метод расшифрования Виженера 
         private string Decode(string input, string keyword)
         {
             
