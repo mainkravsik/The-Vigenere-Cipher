@@ -69,5 +69,15 @@ namespace protect_inf_LR1.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _146159250518448595 {
+            get {
+                object obj = ResourceManager.GetObject("146159250518448595", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

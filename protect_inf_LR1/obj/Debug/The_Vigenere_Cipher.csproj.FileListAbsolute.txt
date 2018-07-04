@@ -17,3 +17,4 @@ D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Debug\The_Vigenere_C
 D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Debug\The_Vigenere_Cipher.csproj.CoreCompileInputs.cache
 D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Debug\protect_inf_LR1.exe
 D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Debug\protect_inf_LR1.pdb
+D:\Ilya\Kem\Program\The Vigenere Cipher\protect_inf_LR1\obj\Debug\protect_inf_LR1.Form2.resources

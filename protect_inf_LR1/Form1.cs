@@ -13,9 +13,11 @@ namespace protect_inf_LR1
 {
     public partial class Form1 : Form
     {
+        private Form2 form2;
         public Form1()
         {
             InitializeComponent();
+            form2 = new Form2(this) { Visible = false };
 
             N = characters.Length;
         }
@@ -233,7 +235,7 @@ namespace protect_inf_LR1
             }
             if (word == 13)
             {
-                buttonEncrypt_Click(this, EventArgs.Empty);
+                buttonDecipher_Click(this, EventArgs.Empty);
 
             }
         }
@@ -277,6 +279,17 @@ namespace protect_inf_LR1
         {
             if (e.KeyData == (Keys.Control | Keys.V))
                 (sender as TextBox).Paste();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            form2.Visible = true;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
